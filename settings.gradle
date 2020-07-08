@@ -1,0 +1,9 @@
+include ':bluetooth'
+include ':app',
+        ':changeskin',
+        ':skin_12',
+        ':hotfix',
+        ':md',
+        ':base',
+        ':https'
+include ':aspect'

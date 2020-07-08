@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_def_height"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/im_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/safe_distance_12"
+        android:src="@mipmap/nav_back_icon" />
+
+    <com.demo.base.ui.view.TitleTextView
+        android:id="@+id/tv_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:checked="true"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/im_right1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/safe_distance_6"
+        android:padding="@dimen/safe_distance_6"
+        android:src="@mipmap/nav_search_icon"
+        app:layout_constraintRight_toLeftOf="parent" />
+
+    <com.demo.base.ui.view.shape.ShapeTextView
+        android:id="@+id/tv_right1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/safe_distance_24"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/safe_distance_12"
+        app:sv_tx_radius="@dimen/safe_distance_12"
+        android:text="右边"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:orientation="horizontal"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/mainText"
+        app:layout_constraintRight_toLeftOf="parent" />
+</RelativeLayout>

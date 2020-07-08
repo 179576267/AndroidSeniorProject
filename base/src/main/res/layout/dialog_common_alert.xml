@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="100dp">
+
+    <com.demo.base.ui.view.shape.ShapeTextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:minHeight="167dp"
+        android:paddingBottom="@dimen/safe_distance_24"
+        android:paddingHorizontal="18dp"
+        android:text="发送发送发送发送发送发送发送"
+        android:textColor="@color/mainText"
+        android:textSize="@dimen/text_size_15"
+        app:sv_tx_background="@color/white"
+        app:sv_tx_radius="@dimen/safe_distance_18" />
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tv_content"
+        android:layout_marginTop="-24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.demo.base.ui.view.shape.ShapeTextView
+            android:id="@+id/tv_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/safe_distance_48"
+            android:layout_marginRight="@dimen/safe_distance_24"
+            android:gravity="center"
+            android:maxLines="1"
+            android:minWidth="104dp"
+            android:textStyle="bold"
+            android:text="取消"
+            android:textColor="@color/mainText"
+            android:textSize="@dimen/safe_distance_18"
+            app:sv_tx_background="@color/cFFF6F7FA"
+            app:sv_tx_radius="@dimen/safe_distance_24" />
+
+        <com.demo.base.ui.view.shape.ShapeTextView
+            android:id="@+id/tv_positive"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/safe_distance_48"
+            android:gravity="center"
+            android:maxLines="1"
+            android:minWidth="104dp"
+            android:text="确定"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/safe_distance_18"
+            app:orientation="horizontal"
+            app:sv_tx_background_end="@color/cFF53FFF6"
+            app:sv_tx_background_start="@color/cFF30CFEE"
+            app:sv_tx_radius="@dimen/safe_distance_24" />
+    </LinearLayout>
+</RelativeLayout>
